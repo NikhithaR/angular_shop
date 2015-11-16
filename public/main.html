@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shoppingCart">
+
+<head>
+
+    <title>sample Cart</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <style type="text/css" src="public/css/style.css"></style>
+    <script type="text/javascript" src="public/script/angular.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+    <script src="public/cart/cart.js"></script>
+    <script src="public/checkout/checkout.js"></script>
+    <script src="public/app.js"></script>
+
+
+</head>
+
+<body>
+        <div id=head>
+         
+        <img style="width:60px;height:35px;float:left;" src="public/assets/images/logo.png"/>
+    <h1> Shop Now..</h1>
+        
+            </div>
+
+    
+         <div id="search">
+            <table id="input-box">           
+                <tr>
+                    <td><img style="width:60px;height:35px;float:right;" src ="public/assets/images/search.png"/></td>
+                    <td><input type='text' placeholder="Type in item name" ng-model="searchTerm" class="form-control"></td>
+                </tr>
+             </table>
+         </div>
+
+    <div ng-view></div>
+    
+</body>
+
+</html>
