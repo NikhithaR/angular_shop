@@ -5,6 +5,6 @@ angular.module('shoppingCart', [
     .config(['$routeProvider', function ($routeProvider) {
         'use strict';
         $routeProvider.otherwise({
-            redirectTo: '/cart'
+            redirectTo: '/carts'
         });
     }]);
